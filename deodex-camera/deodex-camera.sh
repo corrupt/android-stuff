@@ -7,7 +7,9 @@
 # The directory structure it expects is the following
 # 
 # system/priv-app   containing only the directories needed for deodexing (the apps)
+#     -> mkdir -p system/priv-app/$APP && adb pull /system/priv-app/$APP system/priv-app/$APP
 # system/framework  fully adb-pulled
+#     -> mkdir -p system/framework && adb pull /system/framework system/framework
 # 
 # The classpath is extracted from /init.environ.rc on the phone
 # 
